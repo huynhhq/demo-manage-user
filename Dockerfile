@@ -18,4 +18,4 @@ RUN sed -i -e 's/\r$//' /usr/local/bin/docker-entrypoint.sh \
     && chmod +x /usr/local/bin/docker-entrypoint.sh && ln -s /usr/local/bin/docker-entrypoint.sh /
 ENTRYPOINT ["docker-entrypoint.sh"]
 
-EXPOSE 4001
+EXPOSE 3001
