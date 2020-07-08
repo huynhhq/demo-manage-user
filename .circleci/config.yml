@@ -190,11 +190,6 @@ commands:
               exit 1
             fi
           name: Installing NodeJS <<parameters.node-version>>
-      - when:
-          condition: <<parameters.install-npm>>
-          steps:
-            - install-npm:
-                version: <<parameters.npm-version>>
 
 jobs:
   install_env:
