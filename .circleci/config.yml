@@ -195,13 +195,6 @@ commands:
           steps:
             - install-npm:
                 version: <<parameters.npm-version>>
-      - when:
-          condition: <<parameters.install-yarn>>
-          steps:
-            - install-yarn:
-                version: <<parameters.yarn-version>>
-
-
 
 jobs:
   install_env:
