@@ -47,6 +47,10 @@ commands:
             fi
             echo "System is $SYS_ENV_PLATFORM"
             # FUNCTIONS
+            get_node_version () {
+              NODE_ORB_INSTALL_VERSION=<<parameters.node-version>>
+            }
+
             installation_check () {
               if command -v node; then
 
