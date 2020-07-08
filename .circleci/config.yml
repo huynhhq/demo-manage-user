@@ -45,7 +45,7 @@ commands:
             elif cat /etc/issue | grep Alpine; then
               SYS_ENV_PLATFORM=alpine
             fi
-
+            echo $SYS_ENV_PLATFORM
             # FUNCTIONS
 
             get_node_index () {
